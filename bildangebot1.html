@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bildangebot1</title>
+    <link rel="stylesheet" href="css/formatierung.css">
+    <script src="js/functionenbild.js"></script>
+  
+</head>
+<body>
+   
+    <img src="grossbilder/eins.jpg" id="nummer1" alt="Bild Nummer1">
+    <br>  
+    <a href="bildangebot4.html" id="zurueck">Zurück</a>
+    <a href="bildangebot2.html" id="vor">Vor</a>
+    <a href="#" id="drucken">Drucken</a>
+    <a href="#" id="schliessen">Schließen</a>
+  
+   <script type="text/javascript">
+        window.onload = function() {
+            var vor = document.getElementById("vor");
+            var schliessen = document.getElementById("schliessen");
+            var zurueck = document.getElementById("zurueck");
+            var drucken = document.getElementById("drucken");
+            vor.onclick = function() {
+                history.forward();
+            }
+
+
+            schliessen.onclick = function() {
+                window.close();
+            }
+
+            zurueck.onclick = function() {
+                history.back();
+            }
+
+            drucken.onclick = function() {
+                window.print();
+            }
+
+        }
+         </script>
+</body>
+</html>

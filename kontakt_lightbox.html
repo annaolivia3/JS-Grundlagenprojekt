@@ -1,0 +1,116 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>Professional Website - Kontakt</title>
+
+<link href="css/formatierung_kontakt.css" rel="stylesheet" type="text/css" media="screen">
+<script src="js/functionenko.js"></script>
+
+<link href="./fslightbox-master/demo/index.css" rel="stylesheet" />
+<script src="fslightbox-master/dist/fslightbox.js"></script>
+</head>
+
+<body>
+<div id="box">
+
+<!--Logo-->
+  <div id="logobereich"><img src="logobild/logo.jpg" alt="Professional Website - JS/PHP/MySQL" width="700" height="100" title="Professional Website - JS/PHP/MySQL"></div>
+  
+<!--  Navigation-->
+  <div id="navibereich"><a href="home.html" title="Home">Home</a> - <a href="werbepartner.html" title="Werbepartner">Werbepartner</a> - <a href="kontakt.html" title="Kontakt">Kontakt</a></div>
+
+<!--Begrüßung  -->
+<div id="grussbereich">
+</div>   
+<br><br><br>   
+ <div id="inhaltsbereich">
+ 
+<!--Bilder-->
+<div id="lightbox">
+    <div style="height: 500px; margin-top: -450px; float: right;"></div>
+    <a data-fslightbox="gallery" data-type="image"
+       href="grossbilder/eins.jpg">
+        <div class="embed-container">
+          <img src="kleinbilder/eins_aktiv.jpg" alt="">
+        </div>
+    </a>
+    <a data-fslightbox="gallery" data-type="image"
+       href="grossbilder/zwei.jpg">
+        <div class="embed-container">
+          <img src="kleinbilder/zwei_aktiv.jpg" alt="">
+        </div>
+    </a>
+    <a data-fslightbox="gallery" data-type="image"
+       href="grossbilder/drei.jpg">
+        <div class="embed-container">
+          <img src="kleinbilder/drei_aktiv.jpg" alt="">
+        </div>
+    </a>
+    <a data-fslightbox="gallery" data-type="image"
+       href="grossbilder/vier.jpg">
+        <div class="embed-container">
+          <img src="kleinbilder/vier_aktiv.jpg" title="Nummer4" alt="">
+        </div>
+    </a>
+</div>
+
+<style>
+    .fslightbox-custom {
+        display: block !important;
+    }
+</style>
+
+<script src="./fslightbox-master/demo/index.js">
+</script>
+<script>
+    fsLightboxInstances['gallery'].props.slideDistance = .4;
+    fsLightboxInstances['gallery'].props.loadOnlyCurrentSource = true;
+    fsLightboxInstances['gallery'].props.onOpen = () => {
+    };
+    fsLightboxInstances['gallery'].open();
+
+
+    setTimeout(() => {
+        const a = document.createElement('a');
+        a.setAttribute('data-fslightbox', 'gallery');
+        a.setAttribute('href', 'some invalid');
+        document.body.appendChild(a);
+
+        refreshFsLightbox();
+        fsLightboxInstances['gallery'].open();
+    }, 1000);
+</script>
+<!--Kontaktliste-->
+
+<script>
+    document.write("<h2>Die Kontaktliste des Teams</h2><br><p><strong>Email an:</strong></p>")
+    email("maincast","professional-website","com");
+    email("team1","professional-website","com");
+    email("team2","professional-website","com");
+    email("team3","professional-website","com");
+    email("team4","professional-website","com");</script> 
+
+<!--  NoScript-->
+  <noscript>
+  <p><strong>Diese Seite verwendet JavaScript. Wenn Sie diesen Text sehen unterstützt Ihr Browser JavaScript nicht</strong></p>
+  <p><strong>Bitte aktivieren Sie JavaScript in Ihrem Browser</strong></p>
+
+
+  <h1>Die Kontaktliste des Teams</h1>
+  <strong>Email an:</strong>
+  
+<p>maincast[at]professional-website.com</p>
+<p>team1[at]professional-website.com</p>
+<p>team2[at]professional-website.com</p>
+<p>team3[at]professional-website.com</p>
+<p>team4[at]professional-website.com</p>    
+  </noscript>
+  </div>
+  
+  <div id="footerbereich">&copy; by Kurs <strong>indisoft</strong>
+  </div>
+  
+</div>
+</body>
+</html>

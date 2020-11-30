@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+/*Hyperlinks*/
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*Bilder allgemein*/
+img {
+    border: none
+}
+
+/*Boxen */
+#box {
+    margin: auto;
+    height: 768px;
+    width: 1024px;
+    background-image: url(../logobild/logo_hg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50px -120px;
+    border: 1px solid #CCC;
+}
+
+#box #logobereich {
+    border-bottom: 1px solid #CCC;
+    background-color: #FFF;
+    text-align: center;
+}
+
+#box #navibereich {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#box #inhaltsbereich {
+    height: 600px;
+}
+
+#box #footerbereich {
+    text-align: center;
+    background-color: #999;
+    padding-top: 10px;
+    padding-bottom: 10px;
+     margin-top: -10px;
+}
+
+
+/*Home*/
+#infobereich {
+    width: 250px;
+    margin-top: 20px;
+}
+
+#info1 {
+    width: 115px;
+}
+
+#info2 {
+    width: 115px;
+    margin-top: -89px;
+    margin-left: 120px;
+}
+
+#info3 {
+    width: 115px;
+    margin-top: 3px;
+}
+
+#info4 {
+    width: 115px;
+    margin-left: 120px;
+    margin-top: -89px;
+}
+
+
+#eingabebegruessung,
+#inhaltsbereich,
+#textbereich {
+    margin-left: 40px;
+}
+
+#textbereich {
+    margin-top: -250px;
+    margin-left: 280px;
+    margin-right: 400px;
+}
+
+#text2 {
+    margin-top: -315px;
+    visibility: hidden;
+}
+
+#text3 {
+    margin-top: -325px;
+    visibility: hidden;
+}
+
+#text4 {
+    margin-top: -320px;
+    visibility: hidden;
+}
+
+/*Home Pop-Up*/
+#vor,
+#zurueck,
+#drucken,
+#schliessen {
+    padding: 40px;
+}
+
+
+

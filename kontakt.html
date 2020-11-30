@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <title>Professional Website - Kontakt</title>
+
+    <link href="css/formatierung_kontakt.css" rel="stylesheet" type="text/css" media="screen">
+    <script src="js/functionenko.js"></script>
+    <script src="js/lightbox.js"></script>
+</head>
+
+<body>
+    <div id="box">
+
+        <!--Logo-->
+        <div id="logobereich"><img src="logobild/logo.jpg" alt="Professional Website - JS/PHP/MySQL" width="700" height="100" title="Professional Website - JS/PHP/MySQL"></div>
+
+        <!--  Navigation-->
+        <div id="navibereich"><a href="home.html" title="Home">Home</a> - <a href="werbepartner.html" title="Werbepartner">Werbepartner</a> - <a href="kontakt.html" title="Kontakt">Kontakt</a></div>
+
+        <!--Begrüßung  -->
+        <div id="grussbereich">
+        <script> uhrzeit();</script>
+        </div>
+        <br><br><br>
+        <noscript>
+            <p style="margin-left: 40px;"><strong>Diese Seite verwendet JavaScript. Wenn Sie diesen Text sehen unterstützt Ihr Browser JavaScript nicht</strong></p>
+            <p style="margin-left: 40px;"><strong>Bitte aktivieren Sie JavaScript in Ihrem Browser</strong></p>
+        </noscript>
+        <div id="inhaltsbereich">
+
+            <!--Bilder-->
+            <div id="lightbox">
+                <img src="kleinbilder/eins_aktiv.jpg" id="light1" alt="">
+                <img src="kleinbilder/zwei_aktiv.jpg" id="light2" alt="">
+                <img src="kleinbilder/drei_aktiv.jpg" id="light3" alt="">
+                <img src="kleinbilder/vier_aktiv.jpg" id="light4" alt="">
+
+
+
+
+            </div>
+            <!--Kontaktliste-->
+
+            <script>
+                document.write("<h2>Die Kontaktliste des Teams</h2><br><p><strong>Email an:</strong></p>")
+                email("maincast", "professional-website", "com");
+                email("team1", "professional-website", "com");
+                email("team2", "professional-website", "com");
+                email("team3", "professional-website", "com");
+                email("team4", "professional-website", "com");
+
+            </script>
+
+            <!--  NoScript-->
+            <noscript>
+
+                <h1>Die Kontaktliste des Teams</h1>
+                <strong>Email an:</strong>
+
+                <p>maincast[at]professional-website.com</p>
+                <p>team1[at]professional-website.com</p>
+                <p>team2[at]professional-website.com</p>
+                <p>team3[at]professional-website.com</p>
+                <p>team4[at]professional-website.com</p>
+            </noscript>
+        </div>
+
+        <div id="footerbereich">&copy; by Kurs <strong>indisoft</strong>
+        </div>
+
+    </div>
+</body>
+
+</html>
