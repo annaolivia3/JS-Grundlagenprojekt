@@ -1,3 +1,0 @@
-Hinweis:
-
-layoutvorlage.html beinhaltet die grundlegende Aufbaustruktur. Diese kann zur Ausarbeitung der Praxisaufgabe weiterverwendet werden.
